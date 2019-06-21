@@ -40,4 +40,7 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
  print(np.random.permutation(10))
  ```
  ![输出结果](../图片/permutation.png)
+ ## [ndarray中take方法](./python.md)
+ 
+ 
  
