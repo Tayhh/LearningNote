@@ -11,9 +11,10 @@
     print (kwargs)
 foo(1, 2, 3, 4, e=5, f=6, g=7)
  ```
- ![输出结果](../图片/参数.png)
+ [输出结果](../图片/参数.png)
 + [debug](./python.md)
  1. **debug是很好的源码阅读助手，通过设置断点可以更快的了解代码的功能**
  2. 花10分钟阅读、实践下[Pycharm中debug](https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/index.html)
++ [yield](./python.md)
 
  
