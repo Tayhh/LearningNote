@@ -41,6 +41,12 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
  ```
  ![输出结果](../图片/permutation.png)
  ## [ndarray中take方法](./python.md)
- 
+ - 根据index、axis获取数组中的元素:**ndarray.take(indices,axis)**
+ - 代码如下：
+ ```
+ imort numpy as np
+ a = np.arange(12).reshape(3,4)
+ a.take(indices=[1,3],axis=1) # 获取1,3列的数据
+ ```
  
  
