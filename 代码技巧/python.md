@@ -33,4 +33,11 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
  ```
 ## [permutation](./python.md)
  - 最常用的是生成一个**打乱的index的副本**，可以理解和**shuffle**功能一致，但是不改变原index
+ - 功能如其名字，**排列**：一组数的可能的排列
+ - 代码如下：
+ ```
+ import numpy as np
+ print(np.random.permutation(10))
+ ```
+ ![输出结果](../图片/permutation.png)
  
