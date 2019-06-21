@@ -31,6 +31,6 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
            else: 
                return ## 返回的read_line是一个迭代器，每个元素是yeild关键字标识的数据块
  ```
-## permutation
+## [permutation](./python.md)
 
  
