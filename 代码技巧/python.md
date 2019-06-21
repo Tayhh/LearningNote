@@ -32,5 +32,5 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
                return ## 返回的read_line是一个迭代器，每个元素是yeild关键字标识的数据块
  ```
 ## [permutation](./python.md)
-
+ - 最常用的是生成一个**打乱的index的副本**，可以理解和**shuffle**功能一致，但是不改变原index
  
