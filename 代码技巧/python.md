@@ -16,7 +16,7 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
  - **debug是很好的源码阅读助手，通过设置断点可以更快的了解代码的功能**
  - 花10分钟阅读、实践下[Pycharm中debug](https://www.ibm.com/developerworks/cn/linux/l-cn-pythondebugger/index.html)
 ## [生成器](./python.md)
- - 由关键字**yeild**标识，生成的是**迭代器**,只在**next类函数（如next(),for ... in ....,前者只生成一个元素）**中才生成迭代器中的元素
+ - 由关键字**yeild**标识，生成的是**迭代器**,只在**next类函数**（如next(),for ... in ....,前者只生成一个元素）中才生成迭代器中的元素
  - 一个比较好的理解是，可以把它看做是**return**
  - 注意它会导致程序产生“断点”，如果yeild 后面是赋值语句，**注意赋值是在“断点”后才赋值的**(https://blog.csdn.net/qq_36330643/article/details/78247070)
  - 最大的好处就是**避免内存浪费**，如读文件的时候，如果文件很大，通常会内存溢出，但是yeild可以优雅的解决
