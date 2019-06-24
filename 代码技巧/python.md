@@ -51,7 +51,7 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
  ![示例图片](../图片/take.png)
  ## [six库](./python.md)
  - **兼容**Python2与Python3
- ## numpy中atleast_xd,np.array,array.astype
+ ## [numpy中atleast_xd,np.array,array.astype](./python.md)
  - atleast_xd,x可以是1，2,3,用来**转换数组维数**：
  ```
  import numpy as np
