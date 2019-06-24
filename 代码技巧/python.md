@@ -68,5 +68,5 @@ array = np.array(array,dtype=dtype,order=order,copy=copy)
 ```
 array.astype(np.float64)
 ```
-- dtype 与 astype 的区别：
+- dtype 与 astype 的**区别**：
 'dtype' can only be used to 'upcast' the array.  For downcasting, use the .astype(t) method.
