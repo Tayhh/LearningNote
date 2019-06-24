@@ -51,3 +51,13 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
  ![示例图片](../图片/take.png)
  ## [six库](./python.md)
  - **兼容**Python2与Python3
+ ## numpy中atleast_xd,x可以是1，2,3，用来转换数组的维数
+ - 代码如下：
+ ```
+ import numpy as np
+ np.atleast_1d([1])
+ np.atleast_2d([1])
+ np.atleast_3d([1])
+ ```
+ - 打印结果如下：
+ ![输出结果](../图片/atleast.png)
