@@ -51,8 +51,8 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
  ![示例图片](../图片/take.png)
  ## [six库](./python.md)
  - **兼容**Python2与Python3
- ## numpy中atleast_xd,x可以是1，2,3，用来转换数组的维数
- - 代码如下：
+ ## numpy中atleast_xd,np.array,array.astype
+ - atleast_xd,x可以是1，2,3,用来**转换数组维数**：
  ```
  import numpy as np
  np.atleast_1d([1])
@@ -60,3 +60,13 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
  np.atleast_3d([1])
  ```
  ![输出结果](../图片/atleast.png)
+- np.array, 用来设置array的属性，主要是**转换数据类型，即修改dtype**
+```
+array = np.array(array,dtype=dtype,order=order,copy=copy)
+```
+- array.astype, 用来**转换数据类型,即修改dtype**
+```
+array.astype(np.float64)
+```
+- dtype 与 astype 的区别：
+'dtype' can only be used to 'upcast' the array.  For downcasting, use the .astype(t) method.
