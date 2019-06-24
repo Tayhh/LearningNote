@@ -49,5 +49,5 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
  a.take(indices=[1,3],axis=1) # 获取1,3列的数据
  ```
  ![示例图片](../图片/take.png)
- ## six库
+ ## [six库](./python.md)
  - **兼容**Python2与Python3
