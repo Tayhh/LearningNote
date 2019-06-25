@@ -86,7 +86,9 @@ finally:
 ```
 - 花5分钟实践下,[手动抛异常raise](https://www.jianshu.com/p/de25635ef4f5),[手动抛异常assert](https://blog.csdn.net/shijichao2/article/details/61421735?utm_source=blogxgwz6)
   - raise
+  - assert：常用在**参数检查**
  ```
+ # raise example
  try：
      raise ZeroDivisionError #这里的异常也可以是自定义的异常
  except ZeroDivisioError as e：
@@ -96,8 +98,9 @@ finally:
  finally:
      pass
  ```
-  - assert：常用在**参数检查**
+  
 ```
+# assert example
 try:
     assert expression1, expression2
 except AssertionError as e:
