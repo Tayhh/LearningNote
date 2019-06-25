@@ -70,7 +70,7 @@ array.astype(np.float64)
 ```
 - dtype 与 astype 的**区别**：
 'dtype' can only be used to 'upcast' the array.  For downcasting, use the .astype(t) method.
-## [异常处理模板](./python.md)
+## [异常处理](./python.md)
 - [模板](https://www.jianshu.com/p/de25635ef4f5)
 ```
 try：
@@ -85,5 +85,5 @@ finally:
     无论是否通过校验，均执行    
 ```
 - [抛异常](https://blog.csdn.net/shijichao2/article/details/61421735?utm_source=blogxgwz6)
-1. raise
-2. assert
+ 1. raise
+ 2. assert
