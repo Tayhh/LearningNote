@@ -84,10 +84,34 @@ else:
 finally:
     无论是否通过校验，均执行    
 ```
-- 花5分钟实践下,[手动抛异常](https://blog.csdn.net/shijichao2/article/details/61421735?utm_source=blogxgwz6)
- 1. raise
+- 花5分钟实践下,[手动抛异常]
+ 1. raise:上面**try语句**中
  ```
+ try：
+     raise ZeroDivisionError #这里的异常也可以是[自定义的异常](https://www.jianshu.com/p/de25635ef4f5)
+ except ZeroDivisioError as e：
+     print(e)
+ else:
+     pass
+ finally:
+     pass
  ```
- 2. assert
+ 2. assert：常用在**参数检查**，原型函数**assert expression**,[花5分钟实践下](https://blog.csdn.net/shijichao2/article/details/61421735?utm_source=blogxgwz6)
 ```
+try:
+    assert expression1, expression2
+except AssertionError as e:
+    print(e)
+else:
+    pass
+finally:
+    pass
+```
+- 花5分钟实践下，[自定义异常](https://www.runoob.com/python3/python3-errors-execptions.html)
+```
+class myError(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return repr(self.value)
 ```
