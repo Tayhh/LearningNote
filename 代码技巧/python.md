@@ -70,8 +70,20 @@ array.astype(np.float64)
 ```
 - dtype 与 astype 的**区别**：
 'dtype' can only be used to 'upcast' the array.  For downcasting, use the .astype(t) method.
-## [学会 raise 异常](./python.md)
-- 所有的程序在设计的时候都有校验机制，通常用**raise**抛出校验不通过的情况，并给出**错误信息**
+## [异常处理模板](./python.md)
+- [模板](https://www.jianshu.com/p/de25635ef4f5)
 ```
-raise ValueError("Input contains NaN, infinity or a value too large for %r."%X.dtype)
+try：
+    检验语句-自动抛出异常or手动抛出异常raise
+except ValueError as e: #捕获异常处理模板
+    处理异常语句，一般是print(e)
+except Exception as ex: #捕获所有异常，因为抛出的异常不捕获处理，会导致程序崩溃
+    print(ex)
+else:
+    校验通过时执行，反之不执行
+finally:
+    无论是否通过校验，均执行    
 ```
+- [抛异常](https://blog.csdn.net/shijichao2/article/details/61421735?utm_source=blogxgwz6)
+-- raise
+-- assert
