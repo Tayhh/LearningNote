@@ -119,4 +119,4 @@ class myError(Exception):
         return repr(self.value)
 ```
 ## [线性代数计算](./python.md)
-- 详细的内容点击[连载博客](https://blog.csdn.net/zhf2016/article/details/52505620)
+- 详细内容花1-2小时看下，点击[连载博客](https://blog.csdn.net/zhf2016/article/details/52505620)
