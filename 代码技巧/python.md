@@ -18,7 +18,7 @@ foo(1, 2, 3, 4, e=5, f=6, g=7)
 ## [生成器](./python.md)
  - 由关键字**yeild**标识，生成的是**迭代器**,只在**next类函数**（如next(),for ... in ....,前者只生成一个元素）中才生成迭代器中的元素
  - 一个比较好的理解是，可以把它看做是**return**
- - 注意它会导致程序产生“断点”，如果yeild 后面是赋值语句，**注意赋值是在“断点”后才赋值的**(https://blog.csdn.net/qq_36330643/article/details/78247070)
+ - 注意它会导致程序产生“断点”，如果yeild 后面是赋值语句，[**注意赋值是在“断点”后才赋值的**](https://blog.csdn.net/qq_36330643/article/details/78247070)
  - 最大的好处就是**避免内存浪费**，如读文件的时候，如果文件很大，通常会内存溢出，但是yeild可以优雅的解决
  ```
  def read_file(fpath): 
@@ -71,10 +71,10 @@ array.astype(np.float64)
 - dtype 与 astype 的**区别**：
 'dtype' can only be used to 'upcast' the array.  For downcasting, use the .astype(t) method.
 ## [异常处理](./python.md)
-- [异常处理模板很简单，点击看更详尽的列子](https://www.jianshu.com/p/de25635ef4f5)
+- 花5分钟实践下，[异常处理模板](https://www.jianshu.com/p/de25635ef4f5)
 ```
 try：
-    检验语句-自动抛出异常or手动抛出异常raise
+    检验语句-自动抛出异常or手动抛出异常raise/assert
 except ValueError as e: #捕获异常处理模板
     处理异常语句，一般是print(e)
 except Exception as ex: #捕获所有异常，因为抛出的异常不捕获处理，会导致程序崩溃
@@ -84,6 +84,10 @@ else:
 finally:
     无论是否通过校验，均执行    
 ```
-- [抛异常](https://blog.csdn.net/shijichao2/article/details/61421735?utm_source=blogxgwz6)
+- 花5分钟，实践下[手动抛异常](https://blog.csdn.net/shijichao2/article/details/61421735?utm_source=blogxgwz6)
  1. raise
+ ```
+ ```
  2. assert
+```
+```
