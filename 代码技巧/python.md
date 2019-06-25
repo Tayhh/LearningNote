@@ -118,4 +118,4 @@ class myError(Exception):
     def __str__(self):
         return repr(self.value)
 ```
-## [矩阵运算](.python.md)
+## [矩阵运算](./python.md)
