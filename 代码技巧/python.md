@@ -118,4 +118,5 @@ class myError(Exception):
     def __str__(self):
         return repr(self.value)
 ```
-## [矩阵运算](./python.md)
+## [线性代数计算](./python.md)
+- 详细的内容点击[连载博客](https://blog.csdn.net/zhf2016/article/details/52505620)
