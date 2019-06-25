@@ -84,7 +84,7 @@ else:
 finally:
     无论是否通过校验，均执行    
 ```
-- 花5分钟，实践下[手动抛异常](https://blog.csdn.net/shijichao2/article/details/61421735?utm_source=blogxgwz6)
+- 花5分钟实践下,[手动抛异常](https://blog.csdn.net/shijichao2/article/details/61421735?utm_source=blogxgwz6)
  1. raise
  ```
  ```
