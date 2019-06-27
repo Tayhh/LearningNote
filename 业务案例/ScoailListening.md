@@ -48,7 +48,8 @@ Index
 ### 数据获取
 花30分钟入门下python中的[scrapy](https://scrapy-chs.readthedocs.io/zh_CN/0.24/intro/tutorial.html)<br/>
 再来个[云社区的例子](https://cloud.tencent.com/developer/news/306037)<br/>
-认识下[html源码结构与元素](https://www.runoob.com/tags/html-reference.html)
+认识下[html源码结构与元素](https://www.runoob.com/tags/html-reference.html)<br/>
+[css与xpath的区别](https://www.jianshu.com/p/489c5d21cdc7)
 ### 分析目的
  - 了解消费者的购车目的，从用途/使用场景角度进行分析<br/>
  了解消费者的购车原因，从汽车的几个重要维度，如安全性,操控,动力,油耗等<br/>
