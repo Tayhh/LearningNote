@@ -4,6 +4,7 @@ Index
 ---
 - [AB测试分流机制](#AB测试分流机制)
 - [业务评估案例](#业务评估案例)
+- [AB测试结果可靠性](#AB测试结果可靠性)
 - [Reference](#Reference)
 
 ## AB测试分流机制
@@ -26,7 +27,11 @@ A / B测试（桶测试或分流测试）是一个**随机实验**，通常有**
   - 互斥实验：实验在同一层拆分流量，且不论如何拆分，不同组的流量是**不重叠(互斥)**的
 ## 业务评估案例
 ![示例图](../图片/AB测试评估示例.jpg)
+## AB测试结果可靠性
+
 ## Reference
 - [一文搞懂AB Testing的分层分流](http://www.woshipm.com/pd/1080730.html)
 - [复盘：如何从0~1搭建AB Test系统](http://www.woshipm.com/pd/2425383.html)
 - [增长策略：如何用AB测试进行活动评估及优化？](http://www.woshipm.com/pd/2078040.html)
+- [你的A/B测试结果真的靠谱吗？](http://www.woshipm.com/data-analysis/2207880.html)
+- [你的A/B测试结果有多靠谱？](http://www.woshipm.com/data-analysis/2207880.html)
