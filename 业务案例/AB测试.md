@@ -55,3 +55,8 @@ A / B测试（桶测试或分流测试）是一个**随机实验**，通常有**
 - [你的A/B测试结果真的靠谱吗？](http://www.woshipm.com/data-analysis/2207880.html)
 - [你的A/B测试结果有多靠谱？](http://www.woshipm.com/data-analysis/2207880.html)
 - [样本均值的抽样分布](https://baike.baidu.com/item/%E6%A0%B7%E6%9C%AC%E5%9D%87%E5%80%BC%E7%9A%84%E6%8A%BD%E6%A0%B7%E5%88%86%E5%B8%83/7181356?fr=aladdin)
+- 《A/B测试与统计学300题》
+- [老司机的行业经验分享：A/B测试的五大误区](http://www.woshipm.com/data-analysis/498087.html)
+- [增长黑客进阶之路：关于A/A测试，看这篇文章就够了](http://www.woshipm.com/data-analysis/427086.html)
+- [【A/B测试算法大揭秘】第五篇：少了它，版本决策将毫无意义](http://www.woshipm.com/pmd/394039.html)
+- [如何使用A/A测试，让数据更准确？](http://www.woshipm.com/data-analysis/438269.html)
