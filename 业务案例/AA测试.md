@@ -3,7 +3,7 @@ AA测试
 
 Index
 ---
--[Reference](#Reference)
+- [Reference](#Reference)
 
 ## Reference
 - [增长黑客进阶之路：关于A/A测试，看这篇文章就够了
