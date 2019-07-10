@@ -28,14 +28,14 @@ Hive的元数据存储在**MYSQL这种关系型数据库**上
 
 ## 重要概念
 - 外部表与内部表
-  - 外部表(external table)
+  - 外部表(external table)<br/>
   导入文件时**不移动文件**，仅仅添加metadata，外部表指向的数据发生变化会自动更新<br/>
   删除外部表时，原数据不会被删除<br/>
   创建语句<br/>
   ```
   create external table xxx
   ```
-  - 内部表(managed table)，默认创建的是内部表
+  - 内部表(managed table)，默认创建的是内部表<br/>
   导入文件时，是**将文件移动到指定位置，即原有路径下文件不在存在**<br/>
   删除表的时候，**数据和元数据都将被删除**<br/>
   创建语句<br/>
@@ -43,13 +43,13 @@ Hive的元数据存储在**MYSQL这种关系型数据库**上
   create table xxx
   ```
   
-  - 区别外部表与内部表
+  - 区别外部表与内部表<br/>
   ```
   describe formatted table_name
   ```
-
+  
 - 分区表和桶表
-  - 分区(partitioned)
+  - 分区(partitioned)<br/>
   一个Hive表在HDFS上有一个对应的目录来存储数据<br/>
   普通表的数据直接存储在改目录下<br/>
   **分区表按分区键划分子目录来存储**<br/>
@@ -57,8 +57,7 @@ Hive的元数据存储在**MYSQL这种关系型数据库**上
   ```
   partitioned by xxx
   ```
-  
-  - 分桶(clustered)
+  - 分桶(clustered)<br/>
   分桶是对分区进行更细粒度的划分,**一个桶里的数据存放在一个文件中**<br/>
   分桶方式：将数据**按照某列属性值的hash值，对桶的个数取模**，对数据进行分桶<br/>
   创建语句<br/>
@@ -68,12 +67,11 @@ Hive的元数据存储在**MYSQL这种关系型数据库**上
   ## sorted by leads_id:桶内数据按leads_id排序，join操作时获得很高的效率
   ## into 10 bucktes:分成10个桶
   ```
-  
   - 分区与分桶的目的<br/>
   提高查询效率，即查询时**不用遍历全部目录（分区）、全部桶（分桶）**
 
 ## Hive文件格式
--文件存储格式<br/>
+- 文件存储格式<br/>
 textfile,**默认格式**<br/>
 sequencefile<br/>
 rcfile<br/>
@@ -103,7 +101,7 @@ orcfile<br/>
 - rcfile<br/>
 行列存储相结合的存储方式，数据按行分块，块数据列式存储<br/>
 元祖重构代价低，因为数据按行分块<br/>
-压缩比比较好，因为可以通过列进行压缩
+压缩比比较好，因为可以通过列进行压缩<br/>
 可以跳过不必要的列，因为块内数据按列存储<br/>
 -orcfile<br/>
 optimized rcfile<br/>
