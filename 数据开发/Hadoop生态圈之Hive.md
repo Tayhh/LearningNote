@@ -7,6 +7,8 @@ Index
 - [架构](#架构)
 - [重要概念](#重要概念)
 - [Hive文件格式](#Hive文件格式)
+- [Hive row format](#Hive row format)
+- [Hive 写入数据的方式](#Hive 写入数据的方式)
 - [Reference](#Reference)
 
 ## 定位
@@ -103,7 +105,7 @@ orcfile<br/>
 元祖重构代价低，因为数据按行分块<br/>
 压缩比比较好，因为可以通过列进行压缩<br/>
 可以跳过不必要的列，因为块内数据按列存储<br/>
--orcfile<br/>
+- orcfile<br/>
 optimized rcfile<br/>
 支持更复杂的数据类型，如datetime,decimal,struct,list,map<br/>
 基于数据类型的块模式压缩，如Integer类型使用RLE(RunLength Encoding)算法<br/>
@@ -111,10 +113,55 @@ optimized rcfile<br/>
 绑定读写所需的内存<br/>
 元数据存储使用PB，允许添加和删除字段<br/>
 
+## Hive row format
+创建hive表时用row format 参数说明**SerDe**(Serializer/Deserializer的简写，hive使用Serde进行行对象的序列与反序列化)的类型<br/>
+语句:<br/>
+```
+CREATE [EXTERNAL] TABLE [IF NOT EXISTS] table_name
+[(col_name data_type [COMMENT col_comment], ...)]  ## 字段声明子句
+[COMMENT table_comment]  ## 表描述子句
+[PARTITIONED BY (col_name data_type [COMMENT col_comment], ...)] ## 创建分区子句
+[CLUSTERED BY (col_name, col_name, ...)  ## 创建分桶子句
+[SORTED BY (col_name [ASC|DESC], ...)]
+INTO num_buckets BUCKETS]
+[ROW FORMAT row_format]  ## 设置对象序列化反序列化类型子句
+[STORED AS file_format]  ## 设置文件格式子句
+[LOCATION hdfs_path]  ## 设置文件实际路径子句
+```<br/>
+默认SerDe<br/>
+```
+row format delimited
+```
 
+## Hive 写入数据的方式
+- 从本地文件系统中导入数据到Hive表<br/>
+```
+load data local inpath 'xxx.txt' into table xxx;
+```
+- 从HDFS上导入数据到Hive表<br/>
+```
+load data inpath '/home/xxx/ddd.txt' into table xxx;
+```
+- 从别的表中查询出相应的数据并导入Hive表
+  - 表已创建<br/>
+  ```
+  insert overwrite table xxx partition(dt='2018-09-26')
+  select uid,model,key,value 
+  from yyy where dt='2018-09-26';
+  ```
+  - 表未创建<br/>
+  ```
+  [drop table if exists tmp_train.tyh_test32dragonboatfestival_showrank_1;]
+  create table [if not exists tmp_train.tyh_test32dragonboatfestival_showrank_1]
+  [location '/data/train/tmp_train/tyh_test32dragonboatfestival_showrank_1'] as 
+  select a,b,c
+  from xxx
+  where a>b;
+  ```
 
 ## Reference
 - [Hive基础入门](https://zhuanlan.zhihu.com/p/51210324)
 - [一脸懵逼学习Hive的使用以及常用语法（Hive语法即Hql语法）](https://cloud.tencent.com/developer/article/1010869)
 - [Hive介绍与核心知识点](https://www.jianshu.com/p/e9ec6e14fe52)
 - [Hadoop：HDFS数据存储与切分](https://blog.csdn.net/oraclestudyroad/article/details/51991576)
+- [Hive row format](https://www.cnblogs.com/rrttp/p/9024153.html)
