@@ -8,7 +8,7 @@ Index
 - [重要概念](#重要概念)
 - [Hive文件格式](#Hive文件格式)
 -
-- [Hive的row format](#Hive的row format)
+- [Hive的rowformat](#Hive的rowformat)
 - [Hive写入数据的方式](#Hive写入数据的方式)
 - [Reference](#Reference)
 
