@@ -127,7 +127,7 @@ INTO num_buckets BUCKETS]
 [ROW FORMAT row_format]  ## 设置对象序列化反序列化类型子句
 [STORED AS file_format]  ## 设置文件格式子句
 [LOCATION hdfs_path]  ## 设置文件实际路径子句
-```<br/>
+```
 默认SerDe<br/>
 ```
 row format delimited
