@@ -7,8 +7,8 @@ Index
 - [架构](#架构)
 - [重要概念](#重要概念)
 - [Hive文件格式](#Hive文件格式)
-- [Hive row format](#Hive row format)
-- [Hive 写入数据的方式](#Hive 写入数据的方式)
+- [Hive的rowformat](#Hive row format)
+- [Hive写入数据的方式](#Hive 写入数据的方式)
 - [Reference](#Reference)
 
 ## 定位
@@ -18,14 +18,14 @@ Index
 ## 架构
 ![示例图](../图片/Hive架构.png)
 
-- 底层存储
+- 底层存储<br/>
 Hive数据是存储在HDFS上的，Hive中的库表可以看做是HDFS上数据做的一个**映射**
 ![示例图](../图片/Hive与HDFS的关联.png)
 
-- 语句执行过程
+- 语句执行过程<br/>
 Hive生成**MapReduce程序**，执行器将程序放到YARN上以一系列Job的方式去执行
 
-- 元数据存储
+- 元数据存储<br/>
 Hive的元数据存储在**MYSQL这种关系型数据库**上
 
 ## 重要概念
