@@ -9,6 +9,7 @@ Index
 - [Hive文件格式](#Hive文件格式)
 - [Hive的rowformat](#Hive的rowformat)
 - [Hive写入数据的方式](#Hive写入数据的方式)
+- [测试](#测试)
 - [Reference](#Reference)
 
 ## 定位
@@ -158,6 +159,17 @@ load data inpath '/home/xxx/ddd.txt' into table xxx;
   from xxx
   where a>b;
   ```
+
+## [测试](../测试/hive查询效率.sql)
+对照组：无分区，无分桶，文件存储格式为默认的textfile<br/>
+![示例](../图片/对照组查询耗时.png)
+- 分区表的查询效率<br/>
+![示例](../图片/分区表查询耗时.png)
+- 分桶表的查询效率<br/>
+![示例](../图片/分桶表查询耗时.png)
+- 文件存储格式的查询效率<br/>
+**orcfile**<br/>
+![示例](../图片/orcfile查询耗时.png)
 
 ## Reference
 - [Hive基础入门](https://zhuanlan.zhihu.com/p/51210324)
