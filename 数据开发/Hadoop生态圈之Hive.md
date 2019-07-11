@@ -7,9 +7,10 @@ Index
 - [架构](#架构)
 - [重要概念](#重要概念)
 - [Hive文件格式](#Hive文件格式)
+- [](#)
+- [Hive写入数据的方式](#Hive写入数据的方式)
+
 - [Hive的rowformat](#Hive row format)
-- [Hive的rowformat](#Hive row format)
-- [Hive写入数据的方式](#Hive 写入数据的方式)
 - [Reference](#Reference)
 
 ## 定位
