@@ -12,7 +12,7 @@ Index
 - [HDFS副本存放策略](#HDFS副本存放策略)
 - [HDFS2新特性](#HDFS2新特性)
 - [linux下HDFS的简单操作](#linux下HDFS的简单操作)
-- [测试](#测试)
+- [HDFS性能优化](#HDFS性能优化)
 - [Reference](#Reference)
 
 ## 定位
@@ -88,7 +88,8 @@ client 切分文件为数据block序列 -> <br/>请求nn为block序列中每个b
   hadoop fs -rmr    删除hdfs中的文件夹
 ```
 
-## [测试](../测试/HDFS测试)
+## HDFS性能优化
+
 
 ## Reference
 - [技术分享丨HDFS 入门](https://zhuanlan.zhihu.com/p/21249592)
@@ -97,3 +98,4 @@ client 切分文件为数据block序列 -> <br/>请求nn为block序列中每个b
 - [hadoop核心知识点总结](https://blog.csdn.net/wl1411956542/article/details/52817601)
 - [hadoop-HDFS的简单操作](https://www.jianshu.com/p/e3754bda123c)
 - [唯品会 HDFS 性能挑战和优化实践](https://www.infoq.cn/article/7o96tvJwNelq4xp-7Puh)
+- [Hadoop实验——熟悉常用的HDFS操作](https://blog.csdn.net/m0_37499059/article/details/78514019)
