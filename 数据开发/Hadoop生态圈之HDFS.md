@@ -63,7 +63,7 @@ HDFS采用**Master/Slave**架构来存储数据
 ## HDFS2新特性
 引入namenode federation,解决了横向内存扩展<br/>
 引入namenode ha，解决了namenode单点故障<br/>
-![示例图](../图片/namenode_ha解决方案.png)
+![示例图](../图片/namenode_ha解决方案.png)<br/>
 引入了yarn,负责资源管理和调度<br/>
 引入了resourcemanager ha，解决了resourcemanager 单点故障<br/>
 ![示例图](../图片/HDFS2新特性.png)
