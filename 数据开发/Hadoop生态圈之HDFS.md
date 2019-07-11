@@ -96,3 +96,4 @@ client 切分文件为数据block序列 -> <br/>请求nn为block序列中每个b
 - [Hadoop之HDFS核心知识点](https://www.icode9.com/content-4-306.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9HDFS%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE)
 - [hadoop核心知识点总结](https://blog.csdn.net/wl1411956542/article/details/52817601)
 - [hadoop-HDFS的简单操作](https://www.jianshu.com/p/e3754bda123c)
+- [唯品会 HDFS 性能挑战和优化实践](https://www.infoq.cn/article/7o96tvJwNelq4xp-7Puh)
