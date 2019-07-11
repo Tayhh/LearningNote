@@ -8,6 +8,9 @@ Index
 - [HDFS优缺点](#HDFS优缺点)
 - [HDFS存储数据](#HDFS存储数据)
 - [HDFS读取文件](#HDFS读取文件)
+- [HDFS写入文件](#HDFS写入文件)
+- [HDFS副本存放策略](#HDFS副本存放策略)
+- [HDFS2新特性](#HDFS2新特性)
 - [Reference](#Reference)
 
 ## 定位
@@ -54,6 +57,16 @@ HDFS采用**Master/Slave**架构来存储数据
 ## HDFS写入文件
 ![示例图](../图片/写入示例图.png)
 
+## HDFS副本存放策略
+![示例图](../图片/副本存放策略.png)
+
+## HDFS2新特性
+引入namenode federation,解决了横向内存扩展<br/>
+引入namenode ha，解决了namenode单点故障<br/>
+![示例图](../图片/namenode_ha解决方案.png)
+引入了yarn,负责资源管理和调度<br/>
+引入了resourcemanager ha，解决了resourcemanager 单点故障<br/>
+![示例图](../图片/HDFS2新特性.png)
 
 ## Reference
 - [技术分享丨HDFS 入门](https://zhuanlan.zhihu.com/p/21249592)
