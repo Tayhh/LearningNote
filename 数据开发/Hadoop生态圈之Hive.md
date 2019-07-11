@@ -7,7 +7,7 @@ Index
 - [架构](#架构)
 - [重要概念](#重要概念)
 - [Hive文件格式](#Hive文件格式)
-- [Hive的rowformat](#Hive row format)
+- [Hive的rowformat](#Hive的rowformat)
 - [Hive写入数据的方式](#Hive写入数据的方式)
 - [Reference](#Reference)
 
@@ -113,7 +113,7 @@ optimized rcfile<br/>
 绑定读写所需的内存<br/>
 元数据存储使用PB，允许添加和删除字段<br/>
 
-## Hive row format
+## Hive的rowformat
 创建hive表时用row format 参数说明**SerDe**(Serializer/Deserializer的简写，hive使用Serde进行行对象的序列与反序列化)的类型<br/>
 语句:<br/>
 ```
