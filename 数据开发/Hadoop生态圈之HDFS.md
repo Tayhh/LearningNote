@@ -7,7 +7,7 @@ Index
 - [HDFS架构](#HDFS架构)
 - [HDFS优缺点](#HDFS优缺点)
 - [HDFS存储数据](#HDFS存储数据)
-- [HDFS读取/下载文件](#HDFS读取/下载文件)
+- [HDFS读取'/下载文件](#HDFS读取'/下载文件)
 - [HDFS写入/上传文件](#HDFS写入/上传文件)
 - [HDFS副本存放策略](#HDFS副本存放策略)
 - [HDFS2新特性](#HDFS2新特性)
