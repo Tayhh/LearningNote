@@ -7,10 +7,8 @@ Index
 - [架构](#架构)
 - [重要概念](#重要概念)
 - [Hive文件格式](#Hive文件格式)
-- [](#)
+- [Hive row format](#Hive row format)
 - [Hive写入数据的方式](#Hive写入数据的方式)
-
-- [Hive的rowformat](#Hive row format)
 - [Reference](#Reference)
 
 ## 定位
@@ -135,7 +133,7 @@ INTO num_buckets BUCKETS]
 row format delimited
 ```
 
-## Hive 写入数据的方式
+## Hive写入数据的方式
 - 从本地文件系统中导入数据到Hive表<br/>
 ```
 load data local inpath 'xxx.txt' into table xxx;
