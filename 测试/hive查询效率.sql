@@ -130,7 +130,8 @@ from tmp_train.tyh_test32_raw
 create table tyh_test_t_time_2 as 
 select *
 from tmp_train.tyh_test_t2
-where age>=30 and age<=50
+where partition_date='2019-07-11'
+and age>=30 and age<=50
 
 ---实验组3：orcfile
 -- ① 建表
