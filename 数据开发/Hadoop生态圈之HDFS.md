@@ -7,8 +7,8 @@ Index
 - [HDFS架构](#HDFS架构)
 - [HDFS优缺点](#HDFS优缺点)
 - [HDFS存储数据](#HDFS存储数据)
-- [HDFS读取'/下载文件](#HDFS读取'/下载文件)
-- [HDFS写入/上传文件](#HDFS写入/上传文件)
+- [HDFS读取下载文件](#HDFS读取下载文件)
+- [HDFS写入上传文件](#HDFS写入上传文件)
 - [HDFS副本存放策略](#HDFS副本存放策略)
 - [HDFS2新特性](#HDFS2新特性)
 - [linux下HDFS的简单操作](#linux下HDFS的简单操作)
@@ -54,11 +54,11 @@ HDFS采用**Master/Slave**架构来存储数据
 辅助namenode,**定期合并fsimage/fsedits**, 并推送给namenode<br/>
 紧急情况下，**恢复namenode**<br/>
 
-## HDFS读取/下载文件
+## HDFS读取下载文件
 client 请求 nn 获取文件 block 列表 -> <br/>从 dn 中获取列表中每个 block 的数据 -> <br/>重复步骤2 -> <br/>合并 block,形成文件 -> <br/>关闭读操作
 ![示例图](../图片/HDFS下载文件.png)
 
-## HDFS写入/上传文件
+## HDFS写入上传文件
 client 切分文件为数据block序列 -> <br/>请求nn为block序列中每个block分配dn -> <br/>client以packet为单位向dn pipeline写入数据 -> <br/>ack -> <br/>重复2-4 -> <br/>close写操作
 ![示例图](../图片/HDFS上传文件.png)
 
