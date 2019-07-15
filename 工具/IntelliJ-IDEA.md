@@ -15,7 +15,7 @@ IntelliJ IDEA 主要用来支持java,scala,groovy等语言的**开发工具**<br
 擅长企业、个人、Web应用
 
 ## maven配置
-- [maven相关知识点]()
+- [maven相关知识点](./maven.md)
 
 ## 文件编码修改乱码问题
 
