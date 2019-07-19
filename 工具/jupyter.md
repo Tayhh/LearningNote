@@ -15,7 +15,7 @@ Index
 ## 语法支持
 - markdown
 - latex公式
-- html/R/Python等40多种编程语言
+- html/R/Python等40多种编程语言<br/>
 ![示例](../图片/jupyter架构.png)
 
 
