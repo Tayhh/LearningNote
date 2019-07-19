@@ -90,16 +90,66 @@ Index
   - = 号赋值与copy赋值<br/>
   = 号赋值:数组间有关联性<br/>
   copy赋值:数组间无关联性
-  - 线性代数
+  - 线性代数 np.linalg库
   ```
-  
+  np.linalg.det() # 计算矩阵的行列式
+  np.linalg.solve() # 线性方程求解
+  np.linalg.inv() # 求矩阵的逆矩阵
+  np.linalg.eigvals() # 求矩阵的特征值
+  np.linalg.eig() # 求矩阵的特征向量
+  np.linalg.svd() # 对矩阵进行奇异值分解
+  np.linalg.norm() # 矩阵或向量的范数
   ```
   - numpy IO
-  - numpy matplotlib
-  
-  
-  
+    - 二进制文件<br/>
+    np.save/savez()<br/>
+    np.load()
+    - 文本文件<br/>
+    np.savetxt()<br/>
+    np.loadtxt()  
+- numpy matplotlib:python会图库
+  - 模板<br/>
+  ```
+  import numpy as np
+  from matplotlib import pyplot as plt
+  x = np.arange(1,11)
+  y = 2*x+5
+  plt.plot/bar/hist(x,y) # plot:曲线图，bar:条形图，用于离散值的可视化，hist:直方图，用于连续值分区间统计
+  plt.title()
+  plt.xlabel()
+  plt.ylabel()
+  plt.show()
+  ```
+  - 中文显示<br/>
+  ```
+  zhfont1 = matplotlib.font_manager.FontProperties(fname)
+  plt.xlabel(,fonproperties)
+  ```
+  - 标记和颜色
+  - subplot
+  ```
+  plt.subplot(2,1,1)
+  plt.subplot(2,1,2)
+  ```  
 - pandas：numpy的升级版本,数据分析库
+  - 与numpy的区别<br/>
+  更强大的输入输出机制，如支持xls,csv,hdf,xml,html<br/>
+  处理更多的数据类型<br/>
+  可以转换数据类型<br/>
+  核心就像操作一个电子表格<br/>
+  - 数据结构
+    - series
+    ```
+    import pandas as pd
+    pd.Series(a, index) # 只有行索引
+    ```
+    - dataframe：series的集合
+    ```
+    pd.DataFrame(a, index=dates, columns=['a','b','c','d']) # 有行索引和列索引
+    ```
+  - 
+
+
 - sklearn：
 
 ## 快捷键
@@ -136,4 +186,5 @@ Index
 - [python数据分析及处理案例技巧1-10（基于jupyter）](https://blog.csdn.net/PbGc396Dwxjb77F2je/article/details/78786979)
 - [Jupyter Notebook 添加目录插件](https://www.jianshu.com/p/7687c6bec65e)
 - [numpy教程](https://www.runoob.com/numpy/numpy-terating-over-array.html)
+- [Python 数据科学入门教程：Pandas](https://www.jianshu.com/p/d9774cf1fea5)
 
