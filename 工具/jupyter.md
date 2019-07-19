@@ -32,8 +32,10 @@ Index
   - anaconda
 - [远程部署](https://blog.csdn.net/weixin_41079550/article/details/89199254)
  
-## [模板]
-
+## 模板
+- numpy
+- pandas
+- sklearn
 
 ## 快捷键
 ![示例](../图片/jupyter快捷键.png)
@@ -48,6 +50,8 @@ Index
   - 代码计时：%timeit/%%timeit
   - 在notebook中嵌入可视化内容:%matplotlib inline
   - 在notebook中调试代码：%pdb
+  - 运行.py文件：%run filename.py
+  
 
 ## 生成目录
 ![示例](../图片/jupyter生成目录1.png)<br/>
