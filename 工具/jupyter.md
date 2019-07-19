@@ -50,7 +50,7 @@ Index
   - 在notebook中调试代码：%pdb
 
 ## 生成目录
-![示例](../图片/jupyter生成目录1.png)
+![示例](../图片/jupyter生成目录1.png)<br/>
 ![示例](../图片/jupyter生成目录2.png)
 
 ## [进阶版工具jupyterlab](https://www.jianshu.com/p/90982d195160)
