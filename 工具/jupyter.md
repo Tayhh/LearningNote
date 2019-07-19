@@ -5,7 +5,9 @@ Index
 ---
 - [定位](#定位)
 - [语法支持](#语法支持)
-- [使用模板](#使用模板)
+- [架构](#架构)
+- [模板](#模板)
+- [快捷键](#快捷键)
 - [Reference](#Reference)
 
 ## 定位
@@ -16,6 +18,8 @@ Index
 - markdown
 - latex公式
 - html/R/Python等40多种编程语言<br/>
+
+## 架构
 ![示例](../图片/jupyter架构.png)
 
 
@@ -25,8 +29,10 @@ Index
   - anaconda
 - [远程部署](https://blog.csdn.net/weixin_41079550/article/details/89199254)
  
-## 使用模板
+## [模板](../测试/jupyter模板.ipynb)
 
+## 快捷键
+![示例](../图片/jupyter快捷键.png)
 
 ## Reference
 - [jupyter部署指南](https://blog.csdn.net/weixin_41079550/article/details/89199254)
