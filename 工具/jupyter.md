@@ -55,4 +55,5 @@ Index
 - [Jupyter Notebook Quickstart](https://jupyter.readthedocs.io/en/latest/content-quickstart.html)
 - [magic关键字](https://www.jianshu.com/p/97fd13a71d93)
 - [jupyter notebook导出包含中文的PDF并正常显示pandas表格](https://www.jianshu.com/p/e97946777866)
+- [python数据分析及处理案例技巧11-20（基于jupyter）](https://blog.csdn.net/pbgc396dwxjb77f2je/article/details/78786978)
 
