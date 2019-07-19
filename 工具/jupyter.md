@@ -32,4 +32,4 @@ Index
 - [jupyter部署指南](https://blog.csdn.net/weixin_41079550/article/details/89199254)
 - [只需15分钟，使用谷歌云平台运行Jupyter Notebook](https://blog.csdn.net/Uwr44UOuQcNsUQb60zk2/article/details/78610044)
 - [google云平台的使用](https://blog.csdn.net/golduty2/article/details/82151407)
-- [https://cloud.tencent.com/developer/news/208412](https://cloud.tencent.com/developer/news/208412)
+- [Jupyter notebook快速入门教程](https://cloud.tencent.com/developer/news/208412)
