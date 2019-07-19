@@ -99,7 +99,7 @@ Index
   
   
   
-- pandas：numpy的升级版本
+- pandas：numpy的升级版本,数据分析库
 - sklearn：
 
 ## 快捷键
