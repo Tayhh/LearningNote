@@ -39,3 +39,4 @@ Index
 - [只需15分钟，使用谷歌云平台运行Jupyter Notebook](https://blog.csdn.net/Uwr44UOuQcNsUQb60zk2/article/details/78610044)
 - [google云平台的使用](https://blog.csdn.net/golduty2/article/details/82151407)
 - [Jupyter notebook快速入门教程](https://cloud.tencent.com/developer/news/208412)
+- [Jupyter Notebook Quickstart](https://jupyter.readthedocs.io/en/latest/content-quickstart.html)
