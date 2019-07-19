@@ -9,6 +9,8 @@ Index
 - [模板](#模板)
 - [快捷键](#快捷键)
 - [magic关键字python](#magic关键字python)
+- [生成目录](#生成目录)
+- [进阶版工具jupyterlab](#进阶版工具jupyterlab)
 - [Reference](#Reference)
 
 ## 定位
@@ -30,7 +32,8 @@ Index
   - anaconda
 - [远程部署](https://blog.csdn.net/weixin_41079550/article/details/89199254)
  
-## [模板](../测试/jupyter模板.ipynb)
+## [模板]
+
 
 ## 快捷键
 ![示例](../图片/jupyter快捷键.png)
@@ -46,6 +49,11 @@ Index
   - 在notebook中嵌入可视化内容:%matplotlib inline
   - 在notebook中调试代码：%pdb
 
+## 生成目录
+![示例](../图片/jupyter生成目录1.png)
+![示例](../图片/jupyter生成目录2.png)
+
+## [进阶版工具jupyterlab](https://www.jianshu.com/p/90982d195160)
 
 ## Reference
 - [jupyter部署指南](https://blog.csdn.net/weixin_41079550/article/details/89199254)
@@ -57,4 +65,5 @@ Index
 - [jupyter notebook导出包含中文的PDF并正常显示pandas表格](https://www.jianshu.com/p/e97946777866)
 - [python数据分析及处理案例技巧11-20（基于jupyter）](https://blog.csdn.net/pbgc396dwxjb77f2je/article/details/78786978)
 - [python数据分析及处理案例技巧1-10（基于jupyter）](https://blog.csdn.net/PbGc396Dwxjb77F2je/article/details/78786979)
+- [Jupyter Notebook 添加目录插件](https://www.jianshu.com/p/7687c6bec65e)
 
