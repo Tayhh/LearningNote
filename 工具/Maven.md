@@ -30,7 +30,7 @@ Maven中工作的基本单位，一个xml文件,**学习maven就是学习pom.xml
 将java工程的相关信息封装为**对象**，便于操作和管理<br/>
 
 - Maven坐标<br/>
-**Maven坐标，即定位目录**
+**Maven坐标，即定位目录**<br/>
 ![示例](../图片/Maven坐标.png)
 - 依赖管理<br/>
   - 实现依赖<br/>
@@ -86,10 +86,13 @@ maven只定义抽象的声明周期,具体任务交给插件完成<br/>
 每个插件都能实现多个功能，**每个功能就是一个插件目标**<br/>
 **maven 的生命周期与插件目标相互绑定，以完成某个具体的构建任务**
 - 依赖继承<br/>
+避免重复的配置<br/>
 ![示例](../图片/Maven依赖继承.png)
 - 聚合<br/>
+方便统一构建<br/>
 ![示例](../图片/批量maven工程安装_清理.png)
 
 ## Reference
 - [Maven 常见知识点整理](https://www.jianshu.com/p/2ffad8918b09)
 - [Maven知识点总结](https://cloud.tencent.com/developer/article/1401694)
+- [Maven 教程](https://www.runoob.com/maven/maven-tutorial.html)
