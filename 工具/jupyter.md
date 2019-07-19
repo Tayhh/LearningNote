@@ -87,7 +87,7 @@ Index
   ```
   np.matlib.empty/zeros/ones/eye/identify/rand(shape,dtype,order)
   ```
-  - = 号赋值与copy赋值
+  - = 号赋值与copy赋值<br/>
   = 号赋值:数组间有关联性<br/>
   copy赋值:数组间无关联性
   - 线性代数
