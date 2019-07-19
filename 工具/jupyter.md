@@ -33,9 +33,32 @@ Index
 - [远程部署](https://blog.csdn.net/weixin_41079550/article/details/89199254)
  
 ## 模板
-- numpy
-- pandas
-- sklearn
+- numpy：矩阵运算，N维数组对象ndarray
+  - 数组属性<br/>
+  维度的数量：ndarray.ndim<br/>
+  数组的维度：ndarray.shape<br/>
+  数组元素的大小：ndarray.size
+  - 创建数组
+  ```
+  numpy.array(shape, dtype = float, order = 'C')
+  np.asarray() # 从已有数组创建数组
+  np.zeros()
+  np.ones()
+  np.empty()
+  np.arrange() # 生成等差数列
+  np.linspace() # 生成等差数列
+  np.frombuffer() # 从数据流中生成
+  np.fromiter() # 从迭代对象中生成
+  np.reshape()  # 对数组的形状重构
+  ```
+  - 索引
+  ```
+  A[2] # 整数索引
+  A[2,1:3] # 数组索引
+  A[~np.isnan(A)] # 布尔索引
+  ```
+- pandas：numpy的升级版本
+- sklearn：
 
 ## 快捷键
 ![示例](../图片/jupyter快捷键.png)
