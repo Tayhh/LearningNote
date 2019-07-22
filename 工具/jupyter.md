@@ -147,7 +147,45 @@ Index
     ```
     pd.DataFrame(a, index=dates, columns=['a','b','c','d']) # 有行索引和列索引
     ```
+    - 算数操作：根据index匹配后，对应元素进行算数操作
   - dataframe 基础
+    - 增加列/删除行、列
+    ```
+    df['add']= pd.Series(data, index)
+    df.drop(index/columns, axis)
+    ```
+    - 查找元素
+    ```
+    df.loc[index list, columns list] # 按索引、列名查找数据
+    df.iloc[index list, columns list] # 按行号、列号查找数据
+    df[condition_1 &/| condition_2] # 条件筛选
+    df.loc[index_1].loc[index_2] # 多级索引查找元素
+    df.xs(22, level='Num') # 多级索引里单维度查找元素，如查找所有levels中 Num=22的行
+    ```
+    - 索引
+    ```
+    df.set_index(index_column_name) # 设置index
+    pd.MultiIndex.from_tuples/arrays # 多级索引，从元组或数组创建
+    ```
+    - 删除或填充空值
+    ```
+    df.dropna(data, axis)
+    df.fillna(fill_data_string)
+    ```
+    - 分组求统计数值
+    ```
+    df.groupby(group_by_column).mean/std/sum/median/count() 
+    df.groupby(group_by_column).describe() # 可以输出所有统计性描述信息
+    ```
+    - 堆叠concat与归并merge与连接join
+    ```
+    pd.concat([df1, df2, df3], axis) # 堆叠,df索引按书按需叠加
+    pd.merge(left_df, right_df, merge_how, on_key) # merge 类似于sql 中的join
+    left.join(right, join_how) # 按行索引进行连接
+    ```
+    
+    
+    
 
 
 - sklearn：
@@ -187,4 +225,5 @@ Index
 - [Jupyter Notebook 添加目录插件](https://www.jianshu.com/p/7687c6bec65e)
 - [numpy教程](https://www.runoob.com/numpy/numpy-terating-over-array.html)
 - [Python 数据科学入门教程：Pandas](https://www.jianshu.com/p/d9774cf1fea5)
+- [最全面的Pandas的教程！没有之一!](https://cloud.tencent.com/developer/article/1419056)
 
