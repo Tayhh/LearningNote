@@ -170,23 +170,39 @@ Index
     df.set_index(index_column_name) # 设置index
     pd.MultiIndex.from_tuples/arrays # 多级索引，从元组或数组创建
     ```
-    - 删除或填充空值
+    - 统计量
     ```
-    df.dropna(data, axis)
-    df.fillna(fill_data_string)
-    ```
-    - 分组求统计数值
-    ```
+    ## 分组统计量
     df.groupby(group_by_column).mean/std/sum/median/count() 
     df.groupby(group_by_column).describe() # 可以输出所有统计性描述信息
+    ## 相关性
+    df.corr()  
+    ## 移动统计量
+    pd.rolling_mean/std/corr(df[column_name], move_num) # 移动平均/标准差/相关性
+    pd.rolling_apply() 自定义移动统计量
+    ```
+    - 数据处理
+    ```
+    ## 重新采样
+    df.resample()
+    ## 处理缺失值：忽略，删除，填充，替换
+    1.删除
+    df.dropna(how=all/any,axis=) # a.全部为空时删除,b.有空就删除，c.空值数量达到阈值时删除
+    2.填充/替换
+    df.fillna(method='ffill/Bfill'，value=-9999) # a.向前填充，b.向后填充,c.静态替换
+    ## 处理错误/异常数据：条件筛选的方式
+    df[(df[column_name]< threshold)]   
     ```
     - 组合数据框 
-    堆叠concat与附加append与归并merge与连接join
     ```
+    ## 堆叠concat
     pd.concat([df1, df2, df3], axis) # 堆叠,df索引按书按需叠加
+    ## 附加append
     df.append(df2) # 按行堆叠
-    pd.merge(left_df, right_df, merge_how, on_key) # merge 类似于sql 中的join
-    left.join(right, join_how) # 按行索引进行连接
+    ## 归并merge
+    pd.merge(left_df, right_df, merge_how, on_key) # merge 类似于sql 中的left join, right join, inner join ,outer join
+    ## 连接join
+    left.join(right, join_how) # 按索引进行连接
     
     ```
     - 查找不重复的值
@@ -220,17 +236,13 @@ Index
     ## excel
     pd.read_excel()
     df.to_excel()
-    ## 
+    ## html
     pd.read_html()
     pd.to_html()
+    ## pickled
+    pd.read_pickle()
+    pd.to_pickle()
     ```
-    
-    
-    
-    
-    
-
-
 - sklearn：
 
 ## 快捷键
