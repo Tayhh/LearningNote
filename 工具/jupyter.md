@@ -114,7 +114,10 @@ Index
   from matplotlib import pyplot as plt
   x = np.arange(1,11)
   y = 2*x+5
+  ## 基于nummpy画图
   plt.plot/bar/hist(x,y) # plot:曲线图，bar:条形图，用于离散值的可视化，hist:直方图，用于连续值分区间统计
+  ## 基于pandas中的dataframe画图
+  df[column_name].plot()
   plt.title()
   plt.xlabel()
   plt.ylabel()
@@ -177,12 +180,52 @@ Index
     df.groupby(group_by_column).mean/std/sum/median/count() 
     df.groupby(group_by_column).describe() # 可以输出所有统计性描述信息
     ```
-    - 堆叠concat与归并merge与连接join
+    - 组合数据框 
+    堆叠concat与附加append与归并merge与连接join
     ```
     pd.concat([df1, df2, df3], axis) # 堆叠,df索引按书按需叠加
+    df.append(df2) # 按行堆叠
     pd.merge(left_df, right_df, merge_how, on_key) # merge 类似于sql 中的join
     left.join(right, join_how) # 按行索引进行连接
+    
     ```
+    - 查找不重复的值
+    ```
+    df.unique()
+    df.nunique()
+    df.value_counts()
+    ```
+    - apply方法:将自定义函数应用对dataframe上
+    ```
+    df[column_name].apply(udf)
+    df[column_name].apply(lambda function)
+    ```
+    - 排序
+    ```
+    df.sort_values(sort_column_name)
+    ```
+    - 空值
+    ```
+    df.isnull()
+    ```
+    - 透视表
+    ```
+    df.pivot_table(values=, index=, columns=)    
+    ```
+    - 导入导出数据：excel/csv/sql数据库库/html文件
+    ```
+    ## csv
+    pd.read_csv()
+    df.to_csv()
+    ## excel
+    pd.read_excel()
+    df.to_excel()
+    ## 
+    pd.read_html()
+    pd.to_html()
+    ```
+    
+    
     
     
     
