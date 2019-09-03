@@ -11,3 +11,4 @@ VMware Workstation（中文名“威睿工作站”）是一款功能强大的�
 
 ## Reference
 - [VMware Workstation](https://baike.baidu.com/item/VMware%20Workstation/9884359?fr=aladdin)
+- [VMware 下载](https://blog.csdn.net/qq_38704372/article/details/79552934)
