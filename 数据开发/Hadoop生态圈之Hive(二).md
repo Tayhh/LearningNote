@@ -1,4 +1,4 @@
-Hadoop生态圈之Hive(二)
+Hadoop生态圈之Hive(二)——Language Manual
 ===
 
 Index
